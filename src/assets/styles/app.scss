@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300');
+
+$backgroundColor: #E3E3E3;
+$navbar: #efefef;
+$splash-font-color: #888888;
+
+body {
+  background: $backgroundColor;
+  margin:0;
+  padding:0;
+  color:$splash-font-color;
+  font-size:15px;
+  font-family:'Open Sans';
+}
+
+#nav-bar{
+  position:relative;
+  display:inline-block;
+  background: $navbar;
+  box-shadow: 0 4px 5px 0 rgba(0,0,0,.05);
+  width:100%;
+  margin-top:1%;
+
+  #nav-buttons{
+    width:fit-content;
+    float:right;
+    margin-right:5%;
+
+    button {
+      display:inline-block;
+      margin: 0 15px 0 15px;
+      background:none;
+      border: none;
+      outline:none;
+      font-family:'Open Sans';
+      font-size:15px;
+      color:$splash-font-color;
+      transition:all .2s ease-in-out;
+
+      &:hover{
+        transform:scale(1.05);
+        color:black;
+        box-shadow: 0 5px 5px 0 rgba(0,0,0,.1);
+        transition:none;
+      }
+
+      &:hover:active{
+        transform:scale(.9);
+      }
+    }
+  }
+}
+
+#main-title{
+  position:relative;
+  font-size:50px;
+  margin-left:2%;
+  font-family:'Open Sans';
+}
+
+#main-byline{
+  padding-left:10px;
+}
+#splash-logo{
+  position:relative;
+  display:inline-block;
+  margin-left:5%;
+  margin-top:7%;
+  width:40%;
+}
+
+#rpm-splash-container{
+  position:relative;
+  display:inline-block;
+  width:100%;
+}
+
+#description-text{
+  position:absolute;
+  top:6%;
+  margin-left:20px;
+  margin-right:80px;
+  display:inline-block;
+  #description-title{
+    font-size:25px;
+    display:block;
+    text-align:center;
+  }
+  #description-summary{
+    font-size:13px;
+    padding-bottom:20px;
+  }
+}
+
+#iframe-container{
+  position:relative;
+  display:block;
+  width:100%;
+  margin-top:5%;
+  height:fit-content;
+  padding-top:20px;
+  padding-bottom:20px;
+  box-shadow: inset 0 10px 5px 0 rgba(0,0,0,.1);
+  background:#b3b3b3;
+
+  iframe{
+    display:block;
+    margin-right:auto;
+    margin-left:auto;
+    border:none;
+    box-shadow: 10px 10px 5px 0 rgba(0,0,0,.1);
+  }
+}
+
+#credits-container{
+  width:100%;
+  height:fit-content;
+  padding-top:10px;
+  background:#434343;
+  padding-bottom:10px;
+
+  span{
+    color:#cfcfcf;
+    padding-right:15px;
+    padding-left:15px;
+  }
+  a{
+    margin: 0 5px 0 5px;
+    text-decoration:none;
+    color:#b4b4b4;
+
+    &:hover{
+      text-decoration:underline;
+    }
+  }
+}
